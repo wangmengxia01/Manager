@@ -1,0 +1,287 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hoolai.ccgames</groupId>
+	<artifactId>bi-front</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
+	
+	<properties>
+		<spring.version>4.2.3.RELEASE</spring.version>
+	</properties>
+	
+	<build>
+		<finalName>Bifront</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warSourceDirectory>src/webapp</warSourceDirectory>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			
+			
+			
+		</plugins>
+		
+		<resources>
+			<resource>
+				<directory>${project.basedir}/src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+	
+	<dependencies>
+
+<!--		<dependency>-->
+<!--			<groupId>com.hoolai.centersdk</groupId>-->
+<!--			<artifactId>center-sdk</artifactId>-->
+<!--			<version>1.9.0-SNAPSHOT</version>-->
+<!--		</dependency>-->
+
+<!--		<dependency>-->
+<!--			<groupId>com.hoolai.ccgames</groupId>-->
+<!--			<artifactId>skeleton</artifactId>-->
+<!--			<version>[1.0.0,2.0.0)</version>-->
+<!--		</dependency>-->
+
+<!--		<dependency>-->
+<!--			<groupId>com.hoolai.ccgames</groupId>-->
+<!--			<artifactId>bi-gate-client</artifactId>-->
+<!--			<version>0.0.7-SNAPSHOT</version>-->
+<!--		</dependency>-->
+
+		<dependency>
+			<groupId>com.hoolai.ccgames</groupId>
+			<artifactId>bi-gate-client</artifactId>
+			<version>0.1.0</version>
+			<!--<scope>provided</scope>-->
+		</dependency>
+		
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.1.0</version>
+		    <scope>provided</scope>
+		</dependency>
+
+		<dependency>
+		    <groupId>javax.servlet.jsp</groupId>
+		    <artifactId>javax.servlet.jsp-api</artifactId>
+		    <version>2.3.1</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>		
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hoolai.ccgames</groupId>
+			<artifactId>center-gate-client</artifactId>
+			<version>[1.0.5,2.0.0)</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.16.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.adobe.blazeds</groupId>
+			<artifactId>blazeds-core</artifactId>
+			<version>3.2.0.3978</version>
+			<exclusions>
+				<exclusion>
+					<groupId>backport-util-concurrent</groupId>
+					<artifactId>backport-util-concurrent</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.adobe.blazeds</groupId>
+			<artifactId>blazeds-common</artifactId>
+			<version>3.2.0.3978</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+		
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<envdir>dev/</envdir>
+				<log4j.level>DEBUG</log4j.level>
+				<log4j.appender>stdout</log4j.appender>
+				<log4j.dir>D:/logs</log4j.dir>
+			</properties>
+		</profile>
+		
+<!--		<profile>-->
+<!--			<id>hoolaitest</id>-->
+<!--			<properties>-->
+<!--				<envdir>hoolaitest/</envdir>-->
+<!--				<log4j.level>DEBUG</log4j.level>-->
+<!--				<log4j.appender>dailyLog</log4j.appender>-->
+<!--				<log.dir>/logs/bifront</log.dir>-->
+<!--			</properties>-->
+<!--		</profile>-->
+		
+		<profile>
+			<id>prod</id>
+			<properties>
+				<envdir>prod/</envdir>
+				<log4j.level>DEBUG</log4j.level>
+				<log4j.appender>dailyLog</log4j.appender>
+				<log.dir>/logs/bifront</log.dir>
+			</properties>
+		</profile>
+
+<!--		<profile>-->
+<!--			<id>qcloud</id>-->
+<!--			<properties>-->
+<!--				<envdir>qcloud/</envdir>-->
+<!--				<log4j.level>DEBUG</log4j.level>-->
+<!--				<log4j.appender>dailyLog</log4j.appender>-->
+<!--				<log.dir>/logs/bifront</log.dir>-->
+<!--			</properties>-->
+<!--		</profile>-->
+
+<!--		<profile>-->
+<!--			<id>qopen</id>-->
+<!--			<properties>-->
+<!--				<envdir>qopen/</envdir>-->
+<!--				<log4j.level>DEBUG</log4j.level>-->
+<!--				<log4j.appender>dailyLog</log4j.appender>-->
+<!--				<log.dir>/logs/bifront</log.dir>-->
+<!--			</properties>-->
+<!--		</profile>-->
+		
+	</profiles>
+
+	<repositories>
+		<repository>
+			<id>mustang-maven-repo</id>
+			<url>https://raw.githubusercontent.com/mustang2247/maven-repo/master/repository</url>
+		</repository>
+	</repositories>
+	
+</project>

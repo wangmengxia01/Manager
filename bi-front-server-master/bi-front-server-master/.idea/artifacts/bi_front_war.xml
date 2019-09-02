@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bi-front:war">
+    <output-path>$PROJECT_DIR$/bi-front-server-old/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>bi-front</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Bifront.war">
+      <element id="artifact" artifact-name="bi-front:war exploded" />
+    </root>
+  </artifact>
+</component>

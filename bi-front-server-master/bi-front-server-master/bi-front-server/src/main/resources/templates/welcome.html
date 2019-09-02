@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 align="center">金币</h1>
+
+<div th:if="r==null">
+	<h2 align="center">游客您好，如果想查看金币情况 <a th:href="@{/user/login}">请登录</a></h2>
+</div>
+<div th:if="r!=null">
+<form th:action="@{/sys/logout}" method="post">
+	<input type="submit" value="注销"/>
+</form>
+</div>
+<hr>
+
+<div th:if="r!=null">
+	<h3>你的金币是:</h3>
+</div>
+
+</body>
+</html>

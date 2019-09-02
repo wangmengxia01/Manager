@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Item>
+		<ID>1</ID>    <!-- 道具ID -->
+		<Name>小盒元宝</Name>    <!-- 道具名称 -->
+		<Image>2000yunabao</Image>    <!-- 道具图标 -->
+		<Description>使用后获得3000元宝。</Description>    <!-- 道具描述 -->
+		<Category>宝物</Category>    <!-- 道具分类 1-宝物 2-消耗 3-功能 -->
+		<Use>否</Use>
+		<DiaoSiUse>否</DiaoSiUse>    <!-- 使用，格式是：可否使用,使用限制,使用价值 -->
+		<Sell>是,LV1,3000元宝</Sell>    <!-- 出售，格式是：可否出售,出售限制,出售价值 -->
+		<Present>否</Present>    <!-- 赠送，格式是：可否赠送,赠送限制 -->
+		<Buy>是,LV1,30Q点</Buy>    <!-- 购买，格式是：可否购买,购买需要 -->		
+		<Evaluation></Evaluation> 
+    	<worth>3000</worth> <!-- 物品筹码价值 -->		
+	</Item>
+	<Item>
+		<ID>2</ID>    <!-- 道具ID -->
+		<Name>大盒元宝</Name>    <!-- 道具名称 -->
+		<Image>21000yunabao</Image>    <!-- 道具图标 -->
+		<Description>使用后获得11000元宝。</Description>    <!-- 道具描述 -->
+		<Category>宝物</Category>    <!-- 道具分类 1-宝物 2-消耗 3-功能 -->
+		<Use>否</Use>
+		<DiaoSiUse>否</DiaoSiUse>    <!-- 使用，格式是：可否使用,使用限制,使用价值 -->
+		<Sell>是,LV1,11000元宝</Sell>    <!-- 出售，格式是：可否出售,出售限制,出售价值 -->
+		<Present>否</Present>    <!-- 赠送，格式是：可否赠送,赠送限制 -->
+		<Buy>是,LV1,100Q点</Buy>    <!-- 购买，格式是：可否购买,购买需要 -->		
+		<Evaluation></Evaluation> 
+    	<worth>11000</worth> <!-- 物品筹码价值 -->		
+	</Item>
+	<Item>
+		<ID>3</ID>    <!-- 道具ID -->
+		<Name>小箱元宝</Name>    <!-- 道具名称 -->
+		<Image>88000yunabao</Image>    <!-- 道具图标 -->
+		<Description>使用后获得35000元宝。</Description>    <!-- 道具描述 -->
+		<Category>宝物</Category>    <!-- 道具分类 1-宝物 2-消耗 3-功能 -->
+		<Use>否</Use>
+		<DiaoSiUse>否</DiaoSiUse>    <!-- 使用，格式是：可否使用,使用限制,使用价值 -->
+		<Sell>是,LV1,35000元宝</Sell>    <!-- 出售，格式是：可否出售,出售限制,出售价值 -->
+		<Present>否</Present>    <!-- 赠送，格式是：可否赠送,赠送限制 -->
+		<Buy>是,LV1,300Q点</Buy>    <!-- 购买，格式是：可否购买,购买需要 -->		
+		<Evaluation></Evaluation> 
+    	<worth>35000</worth> <!-- 物品筹码价值 -->		
+	</Item>
+	<Item>
+		<ID>4</ID>    <!-- 道具ID -->
+		<Name>大箱元宝</Name>    <!-- 道具名称 -->
+		<Image>136000yunabao</Image>    <!-- 道具图标 -->
+		<Description>使用后获得58000元宝。</Description>    <!-- 道具描述 -->
+		<Category>宝物</Category>    <!-- 道具分类 1-宝物 2-消耗 3-功能 -->
+		<Use>否</Use>
+		<DiaoSiUse>否</DiaoSiUse>    <!-- 使用，格式是：可否使用,使用限制,使用价值 -->
+		<Sell>是,LV1,58000元宝</Sell>    <!-- 出售，格式是：可否出售,出售限制,出售价值 -->
+		<Present>否</Present>    <!-- 赠送，格式是：可否赠送,赠送限制 -->
+		<Buy>是,LV1,500Q点</Buy>    <!-- 购买，格式是：可否购买,购买需要 -->		
+		<Evaluation></Evaluation> 
+    	<worth>58000</worth> <!-- 物品筹码价值 -->		
+	</Item>
+	<Item>
+		<ID>5</ID>    <!-- 道具ID -->
+		<Name>一堆元宝</Name>    <!-- 道具名称 -->
+		<Image>233000yunabao</Image>    <!-- 道具图标 -->
+		<Description>使用后获得118000元宝。</Description>    <!-- 道具描述 -->
+		<Category>宝物</Category>    <!-- 道具分类 1-宝物 2-消耗 3-功能 -->
+		<Use>否</Use>
+		<DiaoSiUse>否</DiaoSiUse>    <!-- 使用，格式是：可否使用,使用限制,使用价值 -->
+		<Sell>是,LV1,118000元宝</Sell>    <!-- 出售，格式是：可否出售,出售限制,出售价值 -->
+		<Present>否</Present>    <!-- 赠送，格式是：可否赠送,赠送限制 -->
+		<Buy>是,LV1,1000Q点</Buy>    <!-- 购买，格式是：可否购买,购买需要 -->		
+		<Evaluation></Evaluation> 
+    	<worth>118000</worth> <!-- 物品筹码价值 -->		
+	</Item>
+	<Item>
+		<ID>6</ID>    <!-- 道具ID -->
+		<Name>一仓库元宝</Name>    <!-- 道具名称 -->
+		<Image>666000yunabao</Image>    <!-- 道具图标 -->
+		<Description>使用后获得666000元宝。</Description>    <!-- 道具描述 -->
+		<Category>宝物</Category>    <!-- 道具分类 1-宝物 2-消耗 3-功能 -->
+		<Use>否</Use>
+		<DiaoSiUse>否</DiaoSiUse>    <!-- 使用，格式是：可否使用,使用限制,使用价值 -->
+		<Sell>是,LV1,666000元宝</Sell>    <!-- 出售，格式是：可否出售,出售限制,出售价值 -->
+		<Present>否</Present>    <!-- 赠送，格式是：可否赠送,赠送限制 -->
+		<Buy>是,LV1,5000Q点</Buy>    <!-- 购买，格式是：可否购买,购买需要 -->		
+		<Evaluation></Evaluation> 
+    	<worth>666000</worth> <!-- 物品筹码价值 -->		
+	</Item>
+</Items>
